@@ -6,7 +6,7 @@
     <title>remote.ly | Sign Up For Your Free Trial Today!</title>
 
     <!-- Website & Author Information -->
-    <meta name="author" content="...">
+    <meta name="author" content="Edmund Pau">
     <meta name="description" content="This lab demonstrates a responsive web signup form for a fictitious tech startup.">
 
     <!-- Google Fonts -->
@@ -17,7 +17,71 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+<header>
+    <div class="logo-container">
+        <img src="img/logo.svg" alt="Remote.ly Logo" class="logo">
+        <span>remote.ly</span>
+    </div>
+</header>
 <body>
-
+    <main class="main-container">
+        <section class="hero">
+            <img src="img/work-at-home-with-pets.jpg" alt="Man with dog" class="hero-image hero-image-small">
+            <img src="img/work-at-home.jpg" alt="Woman with dog" class="hero-image hero-image-large">
+        </section>
+        <div class="content-container">
+            <section class="hero-content">
+                <h1>Make every day ‘bring your pet to work’ day.</h1>
+                <p>Our award-winning platform lets you take your work on the go, wherever life may lead you. Sign up now to securely connect to clients, no matter where you are.</p>
+                <div class="trial-offer">
+                    <p>Try it free for 7 days, with plans starting at $25/month.</p>
+                </div>
+            </section>
+            <section class="signup-form">
+                <h2>Your Account</h2>
+                <form action="submit.html" method="post">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                        <small>Your password must contain at least one uppercase letter, one lowercase letter, and one number.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="password-confirm">Password (Again!)</label>
+                        <input type="password" id="password-confirm" name="password-confirm" required>
+                    </div>
+                    <h2>All About You</h2>
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="business-type">Business Type</label>
+                        <select id="business-type" name="business-type" required>
+                            <option value="sole-proprietorship">Sole Proprietorship</option>
+                            <option value="partnership">Non-Sole Proprietorship</option>
+                        </select>
+                    </div>
+                    <button type="submit">Claim Your Free Trial</button>
+                    <p>By signing up, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+                </form>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
